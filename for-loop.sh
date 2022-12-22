@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# for (( i=0;i<=5;i++ ))
+# do
+#     echo $i
+# done
+
+# for i in 1 2 3 4 5
+# do
+#     echo $i
+# done
+
+# for i in ls pwd
+# do
+#     echo "----------$i----------"
+#     $i
+#     echo #boşluk birakir
+# done
+
+# for i in {1..10..2}
+# do
+#     echo $i
+# done
+
+# for file in `pwd`/*
+# do
+#     echo $file
+    
+# done
+
+devops_tools=("docker" "kubernetes" "ansible" "terraform" "jenkins")
+
+for i in ${#devops_tools[@]}
+do
+echo $i
+done
