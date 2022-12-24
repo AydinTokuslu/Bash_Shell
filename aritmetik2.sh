@@ -11,7 +11,8 @@ x="$1"
 y="$2"
 
 if ! [[ "$x" =~ ^[[:blank:]]*[0-9]*[[:blank:]]*$ ]] # blank : boşluk demek, 
-# ^[:blank:] boşluk ile başlayan, [:blank:]$ boşluk ile biten, =~ eşittir demek
+# ^[:blank:] boşluk ile başlayan, [:blank:]$ boşluk ile biten, =~ eşittir demek, 
+#* devamında demek
 then
     echo "hatali sayi=$x"
     exit 1 #buradaki işlem hatalıysa çık, exit 0 işlem çalışıyorsa çık, 
