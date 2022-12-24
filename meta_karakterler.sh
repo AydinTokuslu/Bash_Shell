@@ -23,7 +23,7 @@
 # ls -l [^u]
 
 # {} arasına yazılanları sırayla başındaki metin ile listeler
-# echo merhaba{\ ahmet,\ ali,\ veli} #\ komutu sonra boşluk koyabilmek için ekliyoruz.
+# echo merhaba{\ ahmet,\ ali,\ veli} # \ boşluk koyabilmek için ekliyoruz.
 # # merhaba ahmet merhaba ali merhaba veli
 # echo merhaba{\ ahmet,\ ali,\ veli}\ hoşgeldiniz
 # merhaba ahmet hoşgeldiniz merhaba ali hoşgeldiniz merhaba veli hoşgeldiniz
