@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ay=$(date +%m)  #tarihi ay (%m) olarak göster
+ay=$(date +%m)  #tarihi ay (%m) olarak göster (date +%Y%m%d-%H%M%S = Yearmonthday-HourMinuteSecond)
 
 case $ay in
     02)

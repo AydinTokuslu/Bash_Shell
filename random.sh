@@ -2,7 +2,7 @@
 
 # random sayı tahmin etme problemi
 
-random=$(( ($RANDOM%100)+1 ))
+random=$(( ($RANDOM%100)+1 )) # random 4 basamaklı sayı verdiği için, tahminde kolaylık olması için 2 basamağa indiriyoruz.
 #random=$(( $RANDOM ))
 #echo $random
 
