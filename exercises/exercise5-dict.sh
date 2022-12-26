@@ -7,20 +7,28 @@
 # fruits = {'fruit': 'apple', 'color': 'green'}
 
 declare -A fruits
-fruits=( ["fruit"]="apple" ["color"]="greeen" ["shape"]="circleee" )
+fruits=( ["fruit"]="apple" ["color"]="greeen" ["car"]="lamborginee" ["shape"]="circleee" ["command"]="speedyflygeorge" ["command2"]="speedygoncales" )
 
 longest_value(){
-    max=0
-    for key in "${!fruits[@]}"
+    max=1
+    for key in ${!fruits[@]}
     do    
         #echo $key  #fruit
         #echo ${fruits[$key]}  #apple
         #echo "$key => ${fruits[$key]}"  #fruit => apple
-        if [[ ${#fruits[$key]}>$max ]]
+        if (( ${#fruits[$key]} > $max ))
         then
-            max=${fruits[$key]}
-            echo $max
+            max=${#fruits[$key]}
+            maxitem=${fruits[$key]}                      
+        else
+            max=$max
+            maxitem=$maxitem
         fi
+        
     done
+    echo $maxitem
+    echo $max
+    #echo ${!fruits[@]}
+    #echo ${!fruits[@]}
 }
 longest_value
