@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 ### Write a function called register_check that checks how many
 # students are in school. The function takes a dictionary as a
@@ -18,11 +18,18 @@ register_check(){
     yesAnswer="yes"
     for key in ${!register[@]}
     do    
-        if (( ${register[$key]} == "yes" ))
+        if (( ${register[$key]} = $yesAnswer ));
         then
-            ((number_of_students++))
+            if (( ${register[$key]} == $yesAnswer ));
+            then
+                echo ${register[$key]}
+                ((number_of_students++))
+                echo number_of_students
+            fi
+            
         else
             number_of_students=0
+            
         fi
         
     done
