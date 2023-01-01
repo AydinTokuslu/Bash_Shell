@@ -18,14 +18,12 @@ register_check(){
     yesAnswer="yes"
     for key in ${!register[@]}
     do    
-        if (( ${register[$key]} = $yesAnswer ));
+        
+        if (( ${register[$key]} == $yesAnswer ));
         then
-            if (( ${register[$key]} == $yesAnswer ));
-            then
-                echo ${register[$key]}
-                ((number_of_students++))
-                echo number_of_students
-            fi
+            echo ${register[$key]}
+            ((number_of_students++))
+            echo number_of_students
             
         else
             number_of_students=0

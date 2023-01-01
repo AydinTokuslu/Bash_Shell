@@ -9,7 +9,7 @@ done
 echo "now, number is $i now"
 
 number=1
-until [ $number -ge 10 ]
+until [ $number -ge 10 ] #başlangıcı False olur, False'e göre çalışır.
 do
     echo $number
     ((number++))
