@@ -1,0 +1,30 @@
+# cfn yazıp, cfn-lite seçiyoruz
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  This template launches an EC2 instance with a sec group that enables SSH.
+Parameters:
+  
+Resources:
+  Webserver:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0b5eea76982371e91
+      InstanceType: t2.micro
+      KeyName: second-key
+      SecurityGroups:
+        - !Ref WebserverSecGrp
+      Tags:
+        - Key: Name 
+          Value: CFN-Instance
+        - Key: Environment 
+          Value: Dev    
+
+  WebserverSecGrp:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: enables SSH # Required
+      SecurityGroupIngress:
+        SecurityGroupIngress
+      
+          
