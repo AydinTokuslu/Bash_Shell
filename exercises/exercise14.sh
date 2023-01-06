@@ -7,24 +7,11 @@
 
 
 
-zeroed_code () {
-    sayi=0
-    nums=(2 5 7 8 9)
-    #echo ${nums[0]}
-    #echo ${nums[-1]}
-
-    if (( ${nums[0]}%2 == 0 )) || (( ${nums[0]}%2 == 1 ))
-    then
-        ${nums[0]}="$sayi"
-        ((nums+=${nums[0]}))
-    fi
-    if (( ${nums[-1]}%2 == 0 )) || (( ${nums[-1]}%2 == 1 ))
-    then
-        ${nums[-1]}="$sayi"
-        ((nums+=${nums[-1]}))
-    fi
-    echo $nums
-    
+zeroed() {
+  # Zero the first and last element of the list
+  numbers[0]="0"
+  numbers[-1]="0"
+  echo "${numbers[@]}"
 }
 
-zeroed_code
+zeroed 2 5 7 8 9
