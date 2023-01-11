@@ -1,4 +1,4 @@
-	#!/bin/bash
+#!/bin/bash
 
 hostIp="192.168.100.100"
 ping -c1 $hostIp &> /dev/null
