@@ -48,5 +48,5 @@ date
 ls -lh $destination
 
 # for cron
-# 0,5 * * * * bash /usr/local/bin/backup.sh &> log_file.log
+#0,5 * * * * bash /usr/local/bin/backup.sh &> log_file.log
 

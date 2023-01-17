@@ -11,7 +11,7 @@
 #that will create new user account and automatically generate a password for each of new account. 
 #Once you're done with the shell script you can put the HR in charge of creating new accounts which will finally allow you to work uninterrupted and complete your server deployments on time. 
 
-#Your script accepts user account name and comments as parameter. T
+#Your script accepts user account name and comments as parameter.
 #then create a new user and a password for them. At the same time, you want users to change their password, 
 #when they login the system at the first time. Please create this bash scripting file named `user_password.sh`. 
 
@@ -20,6 +20,9 @@ read -p "please enter your username: " username
 
 # # Get the real name (contents for the description field).
 read -p "please enter your name : " name
+
+#database=`cat /etc/passwd | cut -d':' -f1`
+
 
 while id "$username" >/dev/null 2>&1; do
     # The user exists, so ask for a new username
