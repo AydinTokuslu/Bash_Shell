@@ -1,6 +1,6 @@
 
 phone = {}
-
+records_list = []
 
 def Phonebook():
     while True:
@@ -16,14 +16,11 @@ Select operation on Phonebook App (1/2/3) : """)
                 records=file.readlines()
                 for record in records:
                     record=record.replace("\n", "")
-                    record=record.split(":")
-                    print(record)
+                    record=record.split(" : ")                    
                     name=record[0]
-                    print(name)
                     number=record[1]
-                    print(number)
+                    print(f"{name} {number}")
                     if name == phone_name:
-                        print(phone[name])
                         print(number)
                         break
                     else:
@@ -39,7 +36,8 @@ Select operation on Phonebook App (1/2/3) : """)
                 break
             else:
                 with open("phone_records.txt", "a", encoding="utf-8") as file:
-                    file.write(phone_name+":"+str(phone_number)+"\n")
+                    file.write(phone_name+" "+str(phone_number)+" "+"\n")
+                    records_list.append(file)
                     file.close()
 
                 phone[phone_name] = phone_number
