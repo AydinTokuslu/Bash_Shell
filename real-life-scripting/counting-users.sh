@@ -13,7 +13,7 @@ for i in $userList
 do
     #echo $i
     ((count++))
-donegetent group
+done getent group
 echo "toplam kayitli kişi sayisi : $count"
 
 read -p "Enter a username: " username

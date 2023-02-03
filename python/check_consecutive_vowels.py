@@ -30,20 +30,27 @@ def check_consecutive_vowels():
         if word[i] in vowels:
             liste.append(word[i])
     #print(liste)
-        
-    for i in range(0, len(liste)):
-        #print(vowels.index(liste[i]))
 
-        if vowels[i] == liste[i] and vowels[i+1] == liste[i+1]:
-            print("Positive")
-            break
+    vowels_list=[]
+    for i in liste:
+        if i not in vowels_list:
+            vowels_list.append(i)
         else:
             print("Negative")
-            break
-
-        if len(liste)==1 or len(liste)==0:
+            exit()
+    
+    if len(liste)==1 or len(liste)==0:
             print("Negative")
-            break
+    else:
+        for i in range(0, len(liste)):
+            #print(vowels.index(liste[i]))
+            if vowels[i] == vowels_list[i] or vowels[i+1] == vowels_list[i+1] or vowels[i+2] == vowels_list[i+2]:
+                print("Positive")
+                break
+            else:
+                print("Negative")
+                break
+       
 
 
 check_consecutive_vowels()
