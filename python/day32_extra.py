@@ -12,8 +12,15 @@
 # invalid’
 
 def email_validator(emails):
+    valid_emails=[]
     for i in emails:
-        print(i)
+        if i.startswith("@"):
+            print("invalid e-mail")
+        elif not i.endswith(".com"):
+            print("invalid email")
+        else:
+            valid_emails.append(i)
+    print(valid_emails)
 
 
 emails = ['ben@mail.com', 'john@mail.cm', 'kenny@gmail.com', '@list.com' ]
