@@ -11,27 +11,28 @@
 
 def password_validator():
     
-
+    errors = []
     while True:
-        password=input("please enter your password: ")
-        if len(password)<8:
-            print("your password should be minimum 8 characters")
-            break
+        password = input('Enter your password: ')
+        if not any(i.isupper() for i in password):
+            errors.append("Please add at least one "
+        "capital letter to your password")
+        elif not any(i.islower() for i in password):
+            errors.append("Please add at least one "
+        "small letter to your password")
+        elif not any(i.isdigit() for i in password):
+            errors.append('Please add at least one '
+        'number to your password')
+        elif len(password) < 8:
+            errors.append("Your password is less "
+        "than 8 characters")
+        if len(errors) > 0:
+            print('Check the following errors:')
+            print(str(errors))
+            del errors[0:]
         else:
-            for i in password:
-                if not i.isdigit():
-                    print("your password should have a digit")
-                    break
-                elif not i.islower():
-                    print("your password should have a lower letter")
-                    break
-                elif not i.isupper():
-                    print("your password should have a upper letter")
-                    break
-                else:
-                    print("your password is valid")
+            return f'Your password is {password}'
 
-        
-            
 
-password_validator()
+
+print(password_validator())
