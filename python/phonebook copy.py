@@ -54,7 +54,7 @@ Select operation on Phonebook App (1/2/3) : """)
                     break
                 else:
                     print(
-                        f"There is no one named {phone_name} in the phonebook")
+                        f"There is noone named {phone_name} in the phonebook")
                     break
             print(phone)
         else:
