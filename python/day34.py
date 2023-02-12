@@ -20,8 +20,6 @@ def just_digits():
             i=i.replace("\n", "")
             i=i.split(" ")
             for a in i:
-                #print(i)
-                #print(i[2])
                 if a.isdigit():
                     #digits.append(a)
                     digits+=a+" "
