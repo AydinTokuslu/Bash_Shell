@@ -10,7 +10,28 @@
 # only stop once the user enters a valid password. (use while loop).
 
 def password_validator():
-    pass
+    
 
+    while True:
+        password=input("please enter your password: ")
+        if len(password)<8:
+            print("your password should be minimum 8 characters")
+            break
+        else:
+            for i in password:
+                if not i.isdigit():
+                    print("your password should have a digit")
+                    break
+                elif not i.islower():
+                    print("your password should have a lower letter")
+                    break
+                elif not i.isupper():
+                    print("your password should have a upper letter")
+                    break
+                else:
+                    print("your password is valid")
+
+        
+            
 
 password_validator()
