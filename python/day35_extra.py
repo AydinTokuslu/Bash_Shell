@@ -8,8 +8,15 @@
 # the list is [1, 2, 4, 6, 7, 7] and the integer is 8, your code should 
 # return [8, 8, 8, 8, 8, 8] because 8 is not in the list.
 
-def find_index():
-    pass
+def find_index(list1,num1):
+    num1_index=[]
+    for i in list1:
+        if i == num1:
+            #num1_index.append(list1.index(i))
+            num1_index.append(list1.index(i+1))
+    print(num1_index)
 
 
-find_index()
+list1=[1, 2, 4, 6, 7, 8, 7]
+num1=7
+find_index(list1,num1)
