@@ -18,16 +18,24 @@
 # e -> 4
 
 def count_letters():
+    str_dict={}
+    max=0
+    max_letter=""
     while True:
-        str=input("please enter a string : ")
-
-    s_dict={}
-    a=1
-    for i in s:
-        if i not in s_dict.keys():
-            s_dict[i]=1
+        str=input("please enter a string (for exit=exit): ").lower()
+        if str=="exit":
+            exit()
         else:
-            s_dict[i]=a+1
-    print(s_dict)
+            for i in str:
+                if i not in str_dict.keys():
+                    str_dict[i]=1
+                else:
+                    str_dict[i]+=1
+        #print(str_dict)
+        for i in str_dict:    
+            if str_dict[i]>max:
+                max=str_dict[i]
+                max_letter=i
+        print(f"{max_letter} -> {max}")
 
 count_letters()

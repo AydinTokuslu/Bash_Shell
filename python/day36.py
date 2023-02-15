@@ -5,12 +5,11 @@
 
 def count(s):
     s_dict={}
-    a=1
     for i in s:
         if i not in s_dict.keys():
             s_dict[i]=1
         else:
-            s_dict[i]=a+1
+            s_dict[i]+=1
     print(s_dict)
 
 
