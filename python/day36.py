@@ -3,8 +3,16 @@
 # appears in the string. For example, ‘hello’ should return:
 # {‘h’:1,’e’: 1,’l’:2, ‘o’:1}.
 
-def count():
-    pass
+def count(s):
+    s_dict={}
+    a=1
+    for i in s:
+        if i not in s_dict.keys():
+            s_dict[i]=1
+        else:
+            s_dict[i]=a+1
+    print(s_dict)
 
 
-count()
+s="hello"
+count(s)
