@@ -22,7 +22,7 @@ def count_letters():
     max=0
     max_letter=""
     while True:
-        str=input("please enter a string (for exit=exit): ").lower()
+        str=input("please enter a string (for exit type 'exit'): ").lower()
         if str=="exit":
             exit()
         else:
