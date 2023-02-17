@@ -8,13 +8,14 @@
 def count_the_vowels(a):
     vowels=["a","e","i","o","u"]
     vowels_list=[]
-    for i in a:
+    for i in a.lower():
         if i in vowels:
             if i not in vowels_list:
                 vowels_list.append(i)
     return len(vowels_list)
 
 
-a="hello"
+#a="hello"
 #a="saas"
+a="Aslan"
 print(count_the_vowels(a))
