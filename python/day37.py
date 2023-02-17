@@ -5,8 +5,16 @@
 # as one. For example, ‘saas’ should return 1 vowel. Your code 
 # should count lowercase and uppercase vowels.
 
-def count_the_vowels():
-    pass
+def count_the_vowels(a):
+    vowels=["a","e","i","o","u"]
+    vowels_list=[]
+    for i in a:
+        if i in vowels:
+            if i not in vowels_list:
+                vowels_list.append(i)
+    return len(vowels_list)
 
 
-count_the_vowels()
+a="hello"
+#a="saas"
+print(count_the_vowels(a))
