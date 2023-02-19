@@ -25,3 +25,21 @@ def find_index(list1,num1):
 list1=[1, 2, 4, 6, 7, 7]
 num1=7
 find_index(list1,num1)
+
+# second solution
+
+def find_index(arr: list, n: int) -> list:
+    list1 = []
+    # Using enumerate to find index of integer
+    for i, j in enumerate(arr):
+        if j == n:
+            list1.append(i)
+    # If integer not in list
+    if n not in arr:
+        for j in arr:
+            list1.append(n)
+    return list1
+    return list1
+lst1 = [1, 2, 4, 6, 7, 7]
+print(find_index(lst1, 7))
+print(find_index(lst1, 8))
