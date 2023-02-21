@@ -28,6 +28,4 @@ def guess_a_number():
         print("you are winner")
         
         
-
-
 guess_a_number()
