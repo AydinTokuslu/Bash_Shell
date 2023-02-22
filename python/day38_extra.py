@@ -5,4 +5,7 @@
 # sequence. The list above should return:
 # [4, 8, 10, 13, 16, 29, 30]
 
+def missing_numbers():
+    pass
 
+missing_numbers()
