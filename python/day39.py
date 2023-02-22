@@ -8,3 +8,9 @@
 # picks strong, generate an 8-character password and if they pick 
 # very strong, generate a 12-character password.
 
+def generate_password():
+    pass
+
+
+
+generate_password()
