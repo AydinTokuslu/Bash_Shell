@@ -8,14 +8,13 @@
 # picks strong, generate an 8-character password and if they pick 
 # very strong, generate a 12-character password.
 from random import randint
+import random
 def generate_password():
     password=""
     generate=[0,1,2,3,4,5,6,7,8,9,["A-Z"],["a-z"],"?","!","<",">","*","/","$","+"]
     passw=input("please enter your password strength (weak, strong, very strong): ").lower()
     if passw == "weak":
-        for i in randint(5, generate):
-            password+=i
-        print(password)
+        print(random.choices(generate, weights = [5, 1, 1], k = 5))
         
 
 generate_password()
