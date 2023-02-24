@@ -10,4 +10,11 @@
 # Your code should return:
 # iyay ovelay ythonpay
 
+def translate(a):
+    for i in a:
+        print(i)
+
+
+a = "i love python"
+translate(a)
 
