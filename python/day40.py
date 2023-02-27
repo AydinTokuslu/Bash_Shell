@@ -15,30 +15,28 @@ def translate(a):
     vowels = ["a","e","i","o","u"]
     letter = ""
     for i in a:
-        for j in vowels:
-        #print(i)
-            if i.startswith(j):
-                
-                i+="yay"
-                letter= i + " "
-                break
-                # #print(letter)
-            else:
-                pass
-                #i=i[1::]+i[0]
-                
-                i+="ay"
-                #print(i)
-                letter= i + " "
-                # #print(letter)
-                
-        
+        if i[0] in vowels:                
+            i+="yay"
+            letter+= i + " "
+        else:
+            #pass
+            i=i[1::]+i[0]
+            i+="ay"
+            letter+= i + " "        
     print(letter)
-
-
 
 
 a = "i love python"
 #a = "i ove opython"
 translate(a)
 
+# def pig_latin(a):
+#     output = []
+#     for i, word in enumerate(a.split()):
+#         if word[0] in 'aeiou':
+#             output.append(word[i] + 'yay')
+#         else:
+#             output.append(word[1:] + word[0] + 'ay')
+#     return ' '.join(output)
+
+# print(pig_latin('i love python')
