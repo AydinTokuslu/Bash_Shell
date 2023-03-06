@@ -8,7 +8,7 @@
 # Use the module textblob.
 
 def spelling_checker():
-    pass
+    word = input("please enter a word : ")
 
 
 spelling_checker()
