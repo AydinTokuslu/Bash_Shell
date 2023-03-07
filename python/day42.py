@@ -9,6 +9,7 @@
 
 def spelling_checker():
     word = input("please enter a word : ")
-
+    if word == "true":
+        print("true")
 
 spelling_checker()
