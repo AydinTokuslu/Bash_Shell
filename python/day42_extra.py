@@ -4,3 +4,8 @@
 # minute. The function should then print out the time when the 
 # alarm will go off. When its alarm time, the code should let off a 
 # sound. Use the winsound module for sound.
+
+def alarm():
+    pass
+
+alarm()
