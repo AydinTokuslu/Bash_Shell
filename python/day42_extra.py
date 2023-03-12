@@ -6,6 +6,7 @@
 # sound. Use the winsound module for sound.
 
 def alarm():
-    pass
+    time= input("please enter time (hour and minute) you want the alarm to go off : ")
+    print(f"your alarm will go off at {time}")
 
 alarm()
