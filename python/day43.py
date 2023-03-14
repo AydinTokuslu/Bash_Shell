@@ -5,3 +5,8 @@
 # stored in a dictionary. The name is the key and the marks is the 
 # value. When the user enters done, the function should return a 
 # dictionary of names and values entered.
+
+def student_marks():
+    pass
+
+student_marks()
