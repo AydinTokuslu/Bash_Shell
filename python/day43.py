@@ -7,6 +7,7 @@
 # dictionary of names and values entered.
 
 def student_marks():
-    pass
+    name=input("please enter your name: ")
+    mark=input("please enter your marks: ")
 
 student_marks()
