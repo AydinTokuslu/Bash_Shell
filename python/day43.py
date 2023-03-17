@@ -9,6 +9,5 @@
 def student_marks():
     name=input("please enter your name: ")
     mark=input("please enter your marks: ")
-    mark=input("please enter your marks: ")
 
 student_marks()
