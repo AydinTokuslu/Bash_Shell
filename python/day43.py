@@ -7,7 +7,15 @@
 # dictionary of names and values entered.
 
 def student_marks():
-    name=input("please enter your name: ")
-    mark=input("please enter your marks: ")
+    info = {}
+    while True:
+        name=input("please enter your name or done: ")
+        if name == "done":
+            break
+        marks=int(input("please enter your marks: "))
+        print(info.get(marks))
+        info[name]=info.get(marks) + marks
+    return info
 
-student_marks()
+
+print(student_marks())
