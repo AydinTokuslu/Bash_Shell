@@ -13,8 +13,8 @@ def student_marks():
         if name == "done":
             break
         marks=int(input("please enter your marks: "))
-        print(info.get(marks))
-        info[name]=info.get(marks) + marks
+        print(info.get(marks,0))
+        info[name]=info.get(marks,0) + marks
     return info
 
 
