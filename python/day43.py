@@ -14,6 +14,7 @@ def student_marks():
             break
         marks=int(input("please enter your marks: "))
         print(info.get(marks,0))
+        info[name]=marks
         info[name]=info.get(marks,0) + marks
     return info
 
