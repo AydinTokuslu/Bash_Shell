@@ -12,6 +12,6 @@
 # jj@gmail.comkate@yahoo.com
 
 def save_emails():
-    pass
+    email=input("please enter your email : ")
 
 save_emails()
