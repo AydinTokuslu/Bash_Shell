@@ -11,7 +11,31 @@
 # and not like this:
 # jj@gmail.comkate@yahoo.com
 
-def save_emails():
-    email=input("please enter your email : ")
+mail_list = []
+choice = input("""please enter your choice:
+1- enter mail
+2- display mail lists
+: """)
 
-save_emails()
+if choice == "1":
+    save_emails()
+elif choice == "2":
+    open_emails()
+
+
+def save_emails():
+    while True:
+        email=input("please enter your email : ")
+        if email == "done":
+            break
+        with open("mail_records.txt", "a", encoding="utf-8") as file:
+                        file.write(email+" "+"\n")
+                        mail_list.append(file)
+                        file.close()
+                        print(mail_list)
+
+def open_emails():
+    with open("mail_records.txt", "r", encoding="utf-8") as file:
+            records=file.readlines()
+            print(records)
+
