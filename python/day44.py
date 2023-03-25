@@ -38,5 +38,4 @@ def open_emails():
     with open("mail_records.txt", "r", encoding="utf-8") as file:
             records=file.readlines()
             print(records)
-def deneme():
-    pass
+
