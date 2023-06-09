@@ -12,5 +12,12 @@
 # analogously to printf format strings in C, e.g. "spam=%s 
 # eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".
 
-def analyse_string():
+
+special_characters = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~)"
+
+def analyse_string(str):
     pass
+
+
+
+str = 'Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'
