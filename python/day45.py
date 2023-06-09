@@ -12,3 +12,5 @@
 # analogously to printf format strings in C, e.g. "spam=%s 
 # eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".
 
+def analyse_string():
+    pass
