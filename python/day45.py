@@ -14,6 +14,9 @@
 
 
 special_characters = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~)"
+num_special_character = 0
+num_words = 0
+
 
 def analyse_string(str):
     pass
