@@ -19,8 +19,11 @@ num_words = 0
 
 
 def analyse_string(str):
-    pass
+    for i in str:
+        print(i)
 
 
 
 str = 'Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'
+
+analyse_string(str)
