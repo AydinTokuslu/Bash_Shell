@@ -14,13 +14,25 @@
 
 
 special_characters = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~)"
-num_special_character = 0
-num_words = 0
 
 
 def analyse_string(str):
+    special_char = ""
+    num_special_character = 0
+    num_words = 0
+    
     for i in str:
-        print(i)
+        if i in special_characters:
+            special_char+=i
+            num_special_character+=1
+        else:
+            str=str.split()
+            num_words+=1
+    print(num_words)
+    print(num_special_character)
+    print(special_char)
+    print(len(special_char))
+    
 
 
 
