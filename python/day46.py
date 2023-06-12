@@ -11,8 +11,6 @@
 # 2009      Avatar          Fantasy
 
 
-
-
 import pandas as pd
 # Creating a dictionary
 table = {'year': [2009, 2002, 2009, 2010, 2009],
