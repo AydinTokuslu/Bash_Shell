@@ -17,23 +17,31 @@ def analyse_string(str):
     special_char = ""
     num_special_character = 0
     num_words = 0
+    total_char_count = 0
     
     for i in str:
         if i in special_characters:
             special_char+=i
             #num_special_character+=1
-        else:
-            #str=str.split()
-            num_words+=1
-    print(num_words)
-    #print(num_special_character)
-    print(special_char)
-    print(len(special_char))
+    
+    words= str.split()
+    num_words = len(words)
+
+    for word in words:
+        total_char_count+=len(word)
+    
+    result = {
+        "special characters": len(special_char),
+        "words": num_words,
+        "total characters": total_char_count
+    }
+
+    return result
     
 
-
-
-str = 'Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'
+str = "Python has a string format operator %. This functions analogously to printf format strings in C, e.g. 'spam=%s eggs=%d' % ('blah', 2) evaluates to 'spam=blah eggs=2'."
 
 analyse_string(str)
+analysis_result = analyse_string(str)
+print(analysis_result)
 

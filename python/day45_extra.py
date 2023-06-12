@@ -22,6 +22,6 @@ def analyse_string(string):
 
     return result
 
-string = "Python has a string format operator %. This functions analogously to printf format strings in C, e.g. 'spam=%s eggs=%d' % ('blah', 2) evaluates to 'spam=blah eggs=2' in python"
+string = "Python has a string format operator %. This functions analogously to printf format strings in C, e.g. 'spam=%s eggs=%d' % ('blah', 2) evaluates to 'spam=blah eggs=2'."
 analysis_result = analyse_string(string)
 print(analysis_result)
