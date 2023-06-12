@@ -13,3 +13,7 @@ web = pd.read_html("https://en.wikipedia.org/wiki/Python_(programming_language)"
 # Using slicing to get table number 1
 table = web[1]
 print(table)
+# getting the two columns from table.
+# data_types = table[['Type', 'Mutability']]
+# print(data_types)
+
