@@ -24,12 +24,12 @@ def analyse_string(str):
     for i in str:
         if i in special_characters:
             special_char+=i
-            num_special_character+=1
+            #num_special_character+=1
         else:
-            str=str.split()
+            #str=str.split()
             num_words+=1
     print(num_words)
-    print(num_special_character)
+    #print(num_special_character)
     print(special_char)
     print(len(special_char))
     
@@ -39,3 +39,4 @@ def analyse_string(str):
 str = 'Python has a string format operator %. This functions analogously to printf format strings in C, e.g. "spam=%s eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".'
 
 analyse_string(str)
+
