@@ -12,11 +12,8 @@
 # analogously to printf format strings in C, e.g. "spam=%s 
 # eggs=%d" % ("blah", 2) evaluates to "spam=blah eggs=2".
 
-
-special_characters = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~)"
-
-
 def analyse_string(str):
+    special_characters = "#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
     special_char = ""
     num_special_character = 0
     num_words = 0
