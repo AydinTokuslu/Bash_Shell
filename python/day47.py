@@ -8,3 +8,6 @@
 
 def save_json():
     pass
+
+def read_json():
+    pass
