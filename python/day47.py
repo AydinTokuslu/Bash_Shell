@@ -6,8 +6,3 @@
 
 # names = {'name': 'Carol','sex': 'female','age': 55}
 
-def save_json():
-    names = {'name': 'Carol','sex': 'female','age': 55}
-
-def read_json():
-    pass
