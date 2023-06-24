@@ -33,6 +33,7 @@ movies = [(2009, 'Brothers', 'Drama'),
     (2009, 'Avatar', 'Fantasy')]
 cur .executemany('''INSERT INTO movies VALUES(?, ?, ?);
 ''', movies)
+
 # commit and close
 con.commit()
 con.close()
