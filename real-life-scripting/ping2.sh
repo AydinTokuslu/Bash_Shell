@@ -11,3 +11,6 @@ then
 else
 	echo "$file is not a regular file."
 fi
+
+
+# the script reads the IP addresses from a text file that is given by the user.
